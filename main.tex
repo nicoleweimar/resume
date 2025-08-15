@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.95in]{geometry} % Slightly smaller to fit content
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{microtype}
+
+% ---------- Formatting ----------
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\baselinestretch}{1.04} % subtle breathing room
+\pagestyle{empty}
+\urlstyle{same}
+
+% Lists: slightly tighter
+\setlist[itemize]{leftmargin=*, itemsep=2.5pt, topsep=2.5pt}
+
+% Section headers: slightly less vertical space
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+
+% Helper for left/right layout rows
+\newcommand{\entryrow}[2]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    #1 & #2 \\
+  \end{tabular*}\vspace{-2pt}
+}
+
+\begin{document}
+
+% ---------- Header ----------
+{\LARGE \textbf{Nicole Weimar}}\\[4pt]
+7957 Calle Cozumel \textbar{} Carlsbad, CA 92009 \textbar{}
+\href{mailto:nweimar@g.ucla.edu}{nweimar@g.ucla.edu} \textbar{}
+\href{tel:+18588886578}{(858) 888-6578} \textbar{}
+\href{https://www.linkedin.com/in/nweimar/}{LinkedIn} \textbar{}
+\href{https://github.com/nicoleweimar?tab=repositories}{GitHub}
+
+\vspace{7pt}\hrule\vspace{7pt}
+
+% ---------- Education ----------
+\section*{Education}
+
+\entryrow{\textbf{University of California, Los Angeles (UCLA)}}{\textbf{Los Angeles, CA}}
+\entryrow{B.S. Math of Computation \quad \textit{Minor: Data Science Engineering}}{June 2028}
+\begin{itemize}
+  \item GPA: 3.66/4.0 \quad Honors: Alpha Lambda Delta (ALD \textbar{} PES)
+  \item Relevant Coursework: CS 31, Differential Equations, Linear Algebra \& Applications, Discrete Math
+  \item Fall 2025 Courses: Data Structures and Algorithms in C++, Proof-Based Abstract Linear Algebra
+  \item Activities: UMSA, ACM AI, Women+ in Physical Sciences (W+PS)
+\end{itemize}
+
+\entryrow{\textbf{Pacific Ridge School}}{\textbf{Carlsbad, CA}}
+\begin{itemize}
+  \item UW GPA: 4.0/4.0 \quad W GPA: 4.67/4.0 \hfill 2021--2024
+\end{itemize}
+
+\vspace{3pt}\hrule\vspace{7pt}
+
+% ---------- Relevant Experience ----------
+\section*{Relevant Experience}
+
+\entryrow{\textbf{Association for Computing Machinery (ACM) AI}}{\textbf{Los Angeles, CA}}
+\entryrow{Member}{Sep 2024 -- Present}
+\begin{itemize}
+  \item Completed Research Track Specialization, a quarter-long seminar series introducing key AI research areas and lab skills.
+  \item Developed understanding of diffusion models, transformers, and reinforcement learning.
+\end{itemize}
+
+\entryrow{\textbf{Astrophysics Research at UC Davis}}{\textbf{Davis, CA}}
+\entryrow{Student Researcher}{Jun 2023 -- Jul 2023}
+\begin{itemize}
+  \item Determined size, distance, semi-major axis, and orbital velocity of an exoplanet with $<\!1\%$ error using the transit method.
+  \item Performed aperture photometry with Photutils and SourceExtractor; coded in Python (Jupyter Notebook) and SExtractor.
+\end{itemize}
+
+\entryrow{\textbf{Kumon}}{\textbf{Carlsbad, CA}}
+\entryrow{Center Assistant}{Jan 2023 -- Aug 2024}
+\begin{itemize}
+  \item Supported children's learning through grading and preparing classwork and homework, individualizing strategies for student development based on student goals, providing feedback to students, and communicating student progress to parents and the instructor.
+\end{itemize}
+
+\vspace{3pt}\hrule\vspace{7pt}
+
+% ---------- Leadership ----------
+\section*{Leadership}
+
+\entryrow{\textbf{Society of Women Engineers (SWENext)}}{\textbf{Carlsbad, CA}}
+\entryrow{Founder of Middle School Chapter \& Chapter Leader}{Sep 2023 -- Aug 2024}
+\begin{itemize}
+  \item Founded a middle school chapter, recruiting 20+ members. Designed and led STEM workshops to engage underrepresented groups. Secured industry professionals as guest speakers and coordinated with a mentor to support chapter initiatives.
+\end{itemize}
+
+\vspace{3pt}\hrule\vspace{7pt}
+
+% ---------- Additional ----------
+\section*{Additional}
+\begin{itemize}
+  \item Technical Skills: C++, \LaTeX{}, Excel
+\end{itemize}
+
+\end{document}
